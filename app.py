@@ -53,6 +53,6 @@ def chat_loop(db):
         print("\nAnswer:\n", answer)
 
 if(__name__ == "__main__"):
-    pdf_path = Path(__file__).resolve().parent / "data" / "sample.pdf"
+    pdf_path = Path(__file__).resolve().parent / "data" / "sample1.pdf"
     db = setup_pipeline(str(pdf_path))
     chat_loop(db)
